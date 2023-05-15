@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <meta name="author" content="Clark Tolosa, clarktolosa@gmail.com" />
+
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/_preflight.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS Modules -->
+    <script type="module" src="src/main.ts" async></script>
+    <script type="module" src="src/_authorModal.ts" async></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <main>
+      <h1 class="sr-only"></h1>
+
+      <div class="container--cards">
+        <pug src="src/index.pug" />
+      </div>
+    </main>
   </body>
 </html>
